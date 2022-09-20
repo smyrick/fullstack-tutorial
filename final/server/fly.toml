@@ -1,6 +1,4 @@
-# fly.toml file generated for apollographql-fullstack-tutorial on 2022-09-20T14:55:22-07:00
-
-app = "apollographql-fullstack-tutorial"
+app = "apollo-fullstack-tutorial"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []

@@ -51,8 +51,9 @@ const server = new ApolloServer({
 // Start our server if we're not in a test env.
 // if we're in a test env, we'll manually start it in a test
 if (process.env.NODE_ENV !== 'test') {
-  server.listen().then(() => {
-    console.log(`Server is running at http://localhost:4000`);
+  const serverPort = process.env.PORT ?? 4000;
+  server.listen(serverPort).then(() => {
+    console.log(`Server is running at http://localhost:${serverPort}`);
   });
 }
 
